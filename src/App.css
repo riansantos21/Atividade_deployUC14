@@ -1,0 +1,86 @@
+/* RESET BÁSICO */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* CONTAINER DOS CARDS */
+.container {
+  display: flex;
+  justify-content: center;   
+  gap: 25px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* IMAGEM */
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* TÍTULO */
+.card h3 {
+  margin: 10px 0;
+  color: #222;
+}
+
+/* TEXTO */
+.card p {
+  color: #666;
+  font-size: 15px;
+  min-height: 45px;
+}
+
+/* BOTÃO MELHORADO */
+.button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0, 123, 255, 0.35);
+}
+
+/* HOVER BONITO */
+.button:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.45);
+  background: linear-gradient(135deg, #0069d9, #0046a1);
+}
+
+/* CLICAR */
+.button:active {
+  transform: scale(0.97);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
